@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 
-/* Body - Solid Pink Background */
+/* Body - Black and White Background */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ff69b4; /* Pink color */
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color for contrast */
     padding: 20px;
 }
 
-/* Header styling */
+/* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: #000000; /* Black background for header */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -34,45 +34,44 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffffff; /* White text color */
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Larger font size for readability */
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #ff7f50;
+    color: #ff6f61; /* A subtle accent color */
 }
 
 /* Section Styling */
 section {
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: #f0f0f0; /* Light gray background for sections */
     border-radius: 10px;
     padding: 30px;
     margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Large font for main heading */
     margin-bottom: 15px;
-    font-family: 'Arial', sans-serif;
-    color: #ff1493;
+    color: #000000; /* Black color for main headings */
 }
 
 section p {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Adjusted text size for better readability */
     line-height: 1.6;
     margin-bottom: 20px;
-    font-family: 'Verdana', sans-serif;
+    color: #333333; /* Dark gray text for better contrast */
 }
 
 section h2 {
     font-size: 1.8rem;
     margin-top: 20px;
-    font-family: 'Georgia', serif;
-    color: #ff1493;
+    color: #000000; /* Black for sub-headings */
 }
 
 /* Social Media Links Styling */
@@ -88,7 +87,7 @@ ul li a {
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 30px;
-    background-color: #333;
+    background-color: #333; /* Dark background color for links */
     color: white;
     font-weight: bold;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -101,28 +100,41 @@ ul li a:hover {
 }
 
 ul li a.linkedin {
-    background-color: #0077b5;
+    background-color: #0077b5; /* LinkedIn blue */
 }
 
 ul li a.facebook {
-    background-color: #1877f2;
+    background-color: #1877f2; /* Facebook blue */
 }
 
 ul li a.twitter {
-    background-color: #1da1f2;
+    background-color: #1da1f2; /* Twitter blue */
 }
 
 ul li a.instagram {
-    background-color: #e4405f;
+    background-color: #e4405f; /* Instagram pink */
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000000; /* Black footer */
+    color: white;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+/* Font Awesome Icons */
+ul li a i {
+    font-size: 2rem; /* Large icons */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Hover effects for icons */
+ul li a:hover i {
+    transform: scale(1.2); /* Zoom effect on hover */
+    opacity: 0.8;
 }
 
 /* Mobile responsiveness */
