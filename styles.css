@@ -5,86 +5,124 @@
     box-sizing: border-box;
 }
 
+/* Body - Colorful Gradient Background */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(45deg, #ff6f61, #6a5acd, #32cd32, #ff7f50); /* Colorful background */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #6a5acd, #32cd32, #ff7f50);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
-    color: #fff;
+    color: white;
     padding: 20px;
 }
 
+/* Header styling */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for header */
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
-    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* Social media links at the bottom */
-ul.social-links {
+header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
-ul.social-links li a {
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     font-weight: bold;
+    font-size: 1.2rem;
     text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-/* Social media colors */
-ul.social-links li a.linkedin {
-    background-color: #0077b5; /* LinkedIn blue */
+header nav ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Section Styling */
+section {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+/* Social Media Links Styling */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: #333;
     color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-size: 1.1rem;
 }
 
-ul.social-links li a.github {
-    background-color: #333; /* GitHub black */
-    color: white;
-}
-
-ul.social-links li a.twitter {
-    background-color: #1da1f2; /* Twitter blue */
-    color: white;
-}
-
-ul.social-links li a:hover {
+ul li a:hover {
     opacity: 0.8;
+    transform: scale(1.1);
 }
 
-/* Footer styles */
+ul li a.linkedin {
+    background-color: #0077b5;
+}
+
+ul li a.facebook {
+    background-color: #1877f2;
+}
+
+ul li a.twitter {
+    background-color: #1da1f2;
+}
+
+ul li a.instagram {
+    background-color: #e4405f;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-/* Gradient animation for the background */
+/* Gradient Animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -96,3 +134,23 @@ footer {
         background-position: 0% 50%;
     }
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
+
