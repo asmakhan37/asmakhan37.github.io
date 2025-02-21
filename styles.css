@@ -1,9 +1,8 @@
 body {
-  background-color: pink;
+  background-color: white;
   position: relative;
 &::after {
-    background-color: white; 
-    content: "";             
+    background-color: yellow;            
     position: absolute;
     top: 0;
     bottom: 0;
