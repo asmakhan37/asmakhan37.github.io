@@ -1,3 +1,4 @@
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +8,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(45deg, #ff6f61, #6a5acd, #32cd32, #ff7f50); /* Colorful background */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+    padding: 20px;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for header */
     color: #fff;
     padding: 10px 0;
 }
@@ -37,19 +41,58 @@ section {
     margin: 10px;
 }
 
+/* Social media links at the bottom */
+ul.social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul.social-links li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Social media colors */
+ul.social-links li a.linkedin {
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+}
+
+ul.social-links li a.github {
+    background-color: #333; /* GitHub black */
+    color: white;
+}
+
+ul.social-links li a.twitter {
+    background-color: #1da1f2; /* Twitter blue */
+    color: white;
+}
+
+ul.social-links li a:hover {
+    opacity: 0.8;
+}
+
+/* Footer styles */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Style social media links */
-ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-ul li a:hover {
-    color: #0077b5; /* Hover effect on social links */
+/* Gradient animation for the background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
