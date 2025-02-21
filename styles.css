@@ -86,3 +86,12 @@ footer p {
     font-size: 1rem;
     color: black; /* Dark text for footer */
 }
+icons {
+    margin-right: 10px;  /* Adds some space between the icon and text */
+    font-size: 1.5rem;   /* Controls icon size */
+    color: #000;         /* Default icon color */
+}
+
+ul li a:hover i {
+    color: #f09a36;  /* Changes icon color on hover */
+}
