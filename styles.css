@@ -8,36 +8,41 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: white; /* White background for all pages */
+    color: black; /* Text color set to black */
     padding: 20px;
     line-height: 1.6;
 }
 
-/* Header Styling - Updated with White Background */
+/* Header Styling */
 header {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white; /* White background for better readability */
-    color: black; /* Text color changes to black to contrast with the white background */
+    background-color: white; /* White background for header */
+    color: black; /* Black text for header */
     border-radius: 10px;
+    border: 2px solid black; /* Optional: Adding border to separate from content */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #333; /* Dark text for better visibility */
+    color: black; /* Dark text for header title */
 }
 
 header p {
     font-size: 1.2rem;
-    color: #555; /* Lighter text color for better readability */
+    color: black; /* Dark text for paragraph */
 }
 
 /* Navigation Styling */
-section nav {
+nav {
+    background-color: white; /* White background for navigation bar */
     text-align: center;
     margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 2px solid black; /* Optional: Border to match the white background */
 }
 
 nav ul {
@@ -53,7 +58,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black; /* Black text for links */
     font-weight: bold;
     font-size: 1.3rem;
     padding: 10px 20px;
@@ -62,8 +67,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f09a36; /* Hover color */
-    color: black;
+    background-color: #f09a36; /* Hover background color */
+    color: white; /* Text color on hover changes to white */
 }
 
 /* Footer Styling */
@@ -71,11 +76,13 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white; /* White background for footer */
+    color: black; /* Black text for footer */
     border-radius: 10px;
+    border: 2px solid black; /* Optional: Border to match the white background */
 }
 
 footer p {
     font-size: 1rem;
-    color: #ccc;
+    color: black; /* Dark text for footer */
 }
