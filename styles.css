@@ -1,6 +1,6 @@
 body {
-  background-color: white;
-  position: relative;
+  background-color: pink;
+  text-align: center;
 &::after {
     background-color: yellow;            
     position: absolute;
