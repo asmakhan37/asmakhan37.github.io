@@ -2,7 +2,7 @@ body {
   background-color: pink;
   position: relative;
 &::after {
-    background-color: black; 
+    background-color: white; 
     content: "";             
     position: absolute;
     top: 0;
