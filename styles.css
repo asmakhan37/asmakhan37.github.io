@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #5D1F2E, #8A3F58); /* Merlot-inspired gradient */
-    color: #F1F1F1; /* Light color for text */
+    background: #f5f5f5; /* Light grey background for Cayman theme */
+    color: #333; /* Dark grey text */
     padding: 20px;
     line-height: 1.6;
     min-height: 100vh;
@@ -33,14 +33,14 @@ header {
     text-align: center;
     margin-bottom: 50px;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #5D1F2E, #8A3F58); /* Merlot gradient */
+    background: #006fa6; /* Cayman blue background */
     color: white;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 5rem; /* Larger font size */
+    font-size: 5rem;
     color: white;
     font-weight: 800;
     letter-spacing: -2px;
@@ -48,18 +48,18 @@ header h1 {
 
 header p {
     font-size: 2rem;
-    color: #FFEB3B; /* Yellow for contrast */
+    color: #ffffff; /* Light text for contrast */
     font-weight: 600;
 }
 
 /* Navigation Styling */
 nav {
-    background-color: #1D1D1D; /* Dark background for nav */
+    background-color: #ffffff; /* White background for nav */
     text-align: center;
     margin: 30px 0;
     padding: 18px 0;
     border-radius: 8px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -76,7 +76,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #F1F1F1; /* Light color for links */
+    color: #006fa6; /* Cayman blue for links */
     font-weight: 700;
     font-size: 1.5rem;
     padding: 12px 20px;
@@ -85,7 +85,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #FFEB3B;
+    background-color: #00bcd4; /* Teal hover effect */
     color: white;
 }
 
@@ -99,7 +99,7 @@ nav ul li a:hover {
     padding: 40px;
     font-weight: bold;
     font-size: 2rem;
-    background: #F1F8E9;
+    background: #e3f2fd; /* Light blue background */
     border-radius: 15px;
 }
 
@@ -108,7 +108,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: auto;
-    background-color: #5D1F2E; /* Merlot footer */
+    background-color: #006fa6; /* Cayman blue footer */
     color: white;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -123,11 +123,11 @@ footer p {
 ul li a i {
     margin-right: 10px;
     font-size: 2rem;
-    color: #F1F1F1;
+    color: #006fa6; /* Cayman blue */
 }
 
 ul li a:hover i {
-    color: #FFEB3B;
+    color: #00bcd4; /* Teal on hover */
 }
 
 /* Input and Textarea Styling */
@@ -138,14 +138,14 @@ input, textarea {
     width: 100%;
     font-size: 1.2rem;
     margin-top: 10px;
-    background-color: #1D1D1D;
-    color: #F1F1F1;
+    background-color: #ffffff;
+    color: #333;
     transition: border-color 0.3s;
 }
 
 /* Button Styling */
 button {
-    background-color: #5D1F2E;
+    background-color: #006fa6; /* Cayman blue */
     color: white;
     padding: 14px 28px;
     border-radius: 8px;
@@ -156,7 +156,7 @@ button {
 }
 
 button:hover {
-    background-color: #6A2C41; /* Darker Merlot */
+    background-color: #00bcd4; /* Teal on hover */
 }
 
 /* Responsive Design */
@@ -178,7 +178,7 @@ button:hover {
 /* Projects Section Styling */
 #Projects {
     padding: 40px;
-    background-color: #1D1D1D; /* Dark background for projects */
+    background-color: #ffffff;
     margin: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -189,8 +189,8 @@ button:hover {
 
 /* Each Project Item */
 .project-item {
-    background-color: #2C2C2C; /* Darker background for project items */
-    border: 1px solid #E0E0E0;
+    background-color: #f1f1f1; /* Light grey background for projects */
+    border: 1px solid #e0e0e0;
     padding: 30px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -207,7 +207,7 @@ button:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid #5D1F2E;
+    border: 2px solid #006fa6;
     border-radius: 12px;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -215,20 +215,20 @@ button:hover {
 
 /* Add some spacing inside the project items */
 .project-item h3 {
-    font-size: 2.8rem; /* Increased font size */
-    color: #F1F1F1;
+    font-size: 2.8rem;
+    color: #333;
     margin-bottom: 15px;
 }
 
 .project-item p {
-    font-size: 1.5rem; /* Larger font size */
-    color: #A0A0A0;
+    font-size: 1.5rem;
+    color: #666;
     margin-bottom: 15px;
 }
 
 .project-item a {
     text-decoration: none;
-    color: #5D1F2E;
+    color: #006fa6;
     font-weight: 600;
 }
 
@@ -243,7 +243,7 @@ button:hover {
 }
 
 .project-item:hover::before {
-    border-color: #FFEB3B;
+    border-color: #00bcd4; /* Teal hover effect */
 }
 
 /* Education Section Styling */
@@ -256,23 +256,23 @@ section#education {
 
 /* Educational Items Styling */
 .education-item {
-    background-color: #2C2C2C;
+    background-color: #ffffff;
     padding: 25px;
     border-radius: 10px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
 
 .education-item h3 {
     font-size: 2rem;
-    color: #F1F1F1;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .education-item p {
     font-size: 1.2rem;
-    color: #A0A0A0;
+    color: #666;
 }
 
 .education-item:hover {
@@ -288,18 +288,18 @@ section#education {
     text-align: center;
     min-height: 70vh;
     padding: 40px;
-    background-color: #8A3F58; /* Dark Merlot background for contact section */
+    background-color: #00bcd4; /* Teal background for contact section */
 }
 
 #contact-us h2 {
-    font-size: 4rem; /* Larger font size */
-    color: #FFFFFF;
+    font-size: 4rem;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 #contact-us p {
-    font-size: 1.5rem; /* Larger font size */
-    color: #F1F1F1;
+    font-size: 1.5rem;
+    color: #333;
     margin-bottom: 30px;
 }
 
@@ -313,13 +313,13 @@ section#education {
 
 .contact-icons a {
     text-decoration: none;
-    font-size: 3.5rem; /* Larger icon size */
-    color: #5D1F2E;
+    font-size: 3.5rem;
+    color: #006fa6;
     transition: color 0.3s ease;
 }
 
 .contact-icons a:hover {
-    color: #FFEB3B;
+    color: #00bcd4;
 }
 
 .contact-icons i {
