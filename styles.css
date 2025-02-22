@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFF1F8; /* Soft pink background */
+    background-color: #F4F4F9; /* Light grey background */
     color: #333; /* Dark text for contrast */
     padding: 20px;
     line-height: 1.6;
@@ -19,7 +19,7 @@ header {
     text-align: center;
     margin-bottom: 50px;
     padding: 50px 20px;
-    background-color: #D81B60; /* Bold magenta background for header */
+    background-color: #2C3E50; /* Deep blue background for header */
     color: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -34,7 +34,7 @@ header h1 {
 
 header p {
     font-size: 1.3rem;
-    color: #B2EBF2; /* Light turquoise to complement the magenta */
+    color: #BDC3C7; /* Light grey to complement the blue */
     font-weight: 400;
 }
 
@@ -61,7 +61,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #D81B60; /* Magenta color for links */
+    color: #2C3E50; /* Deep blue color for links */
     font-weight: 500;
     font-size: 1.2rem;
     padding: 12px 20px;
@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #4CAF50; /* Vibrant green on hover */
+    background-color: #F39C12; /* Gold-like color on hover */
     color: white; /* White text when hovering */
 }
 
@@ -79,7 +79,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 50px;
-    background-color: #D81B60;
+    background-color: #2C3E50; /* Deep blue footer */
     color: white;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -94,12 +94,12 @@ footer p {
 ul li a i {
     margin-right: 10px;
     font-size: 1.5rem;
-    color: #D81B60; /* Magenta color for icons */
+    color: #2C3E50; /* Deep blue color for icons */
 }
 
 /* Icon Hover Effect */
 ul li a:hover i {
-    color: #4CAF50; /* Green color for icon hover effect */
+    color: #F39C12; /* Gold color for icon hover effect */
 }
 
 /* Input and Textarea Styling */
@@ -110,13 +110,13 @@ input, textarea {
     width: 100%;
     font-size: 1rem;
     margin-top: 10px;
-    background-color: #F9F9F9; /* Light background for inputs */
+    background-color: #FFFFFF; /* White background for inputs */
     transition: border-color 0.3s;
 }
 
 /* Button Styling */
 button {
-    background-color: #D81B60; /* Bold magenta button */
+    background-color: #2C3E50; /* Deep blue button */
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -127,7 +127,7 @@ button {
 }
 
 button:hover {
-    background-color: #E91E63; /* Slightly darker magenta on hover */
+    background-color: #34495E; /* Slightly darker blue on hover */
 }
 
 /* Responsive Design */
@@ -182,7 +182,7 @@ button:hover {
 
 .project-item a {
     text-decoration: none;
-    color: #D81B60; /* Magenta for links in project items */
+    color: #2C3E50; /* Deep blue for links in project items */
     font-weight: 500;
 }
 
