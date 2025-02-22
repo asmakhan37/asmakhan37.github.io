@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F4F4F9; /* Light grey background */
-    color: #333; /* Dark text for contrast */
+    background-color: #F8F0F6; /* Soft blush pink background */
+    color: #3A3A3A; /* Darker text for readability */
     padding: 20px;
     line-height: 1.6;
     min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
@@ -21,10 +21,10 @@ body {
 header {
     text-align: center;
     margin-bottom: 50px;
-    padding: 50px 20px;
-    background-color: #2C3E50; /* Deep blue background for header */
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4); /* Soft pink to deep rose gradient */
     color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -37,7 +37,7 @@ header h1 {
 
 header p {
     font-size: 1.3rem;
-    color: #BDC3C7; /* Light grey to complement the blue */
+    color: #F0E5E8; /* Light blush pink to complement the background */
     font-weight: 400;
 }
 
@@ -46,16 +46,17 @@ nav {
     background-color: #FFFFFF;
     text-align: center;
     margin: 30px 0;
-    padding: 15px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    padding: 18px 0;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 nav ul li {
@@ -64,7 +65,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #2C3E50; /* Deep blue color for links */
+    color: #FF69B4; /* Soft rose pink color for links */
     font-weight: 500;
     font-size: 1.2rem;
     padding: 12px 20px;
@@ -73,8 +74,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #F39C12; /* Gold-like color on hover */
-    color: white; /* White text when hovering */
+    background-color: #FFD700; /* Gold-like color on hover */
+    color: white;
 }
 
 /* About Me Section - Centering Content */
@@ -83,18 +84,20 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 70vh; /* Take at least 70% of the screen height */
+    min-height: 70vh;
     padding: 40px;
     font-weight: bold;
     font-size: 22px;
+    background: #FFF0F5; /* Light lavender background */
+    border-radius: 15px;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    padding: 15px;
-    margin-top: auto; /* Push footer to the bottom */
-    background-color: #2C3E50; /* Deep blue footer */
+    padding: 20px;
+    margin-top: auto;
+    background-color: #FF69B4; /* Soft rose pink footer */
     color: white;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -109,29 +112,29 @@ footer p {
 ul li a i {
     margin-right: 10px;
     font-size: 1.5rem;
-    color: #2C3E50; /* Deep blue color for icons */
+    color: #FF69B4; /* Soft pink for icons */
 }
 
 /* Icon Hover Effect */
 ul li a:hover i {
-    color: #F39C12; /* Gold color for icon hover effect */
+    color: #FFD700; /* Gold color for icon hover effect */
 }
 
 /* Input and Textarea Styling */
 input, textarea {
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
     border: 1px solid #ddd;
     width: 100%;
     font-size: 1rem;
     margin-top: 10px;
-    background-color: #FFFFFF; /* White background for inputs */
+    background-color: #FFFFFF;
     transition: border-color 0.3s;
 }
 
 /* Button Styling */
 button {
-    background-color: #2C3E50; /* Deep blue button */
+    background-color: #FF69B4; /* Soft rose pink button */
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -142,7 +145,7 @@ button {
 }
 
 button:hover {
-    background-color: #34495E; /* Slightly darker blue on hover */
+    background-color: #FF1493; /* Slightly darker pink on hover */
 }
 
 /* Responsive Design */
@@ -185,7 +188,7 @@ button:hover {
 
 .project-item h3 {
     font-size: 1.6rem;
-    color: #333;
+    color: #3A3A3A;
     margin-bottom: 15px;
 }
 
@@ -197,7 +200,7 @@ button:hover {
 
 .project-item a {
     text-decoration: none;
-    color: #2C3E50; /* Deep blue for links in project items */
+    color: #FF69B4;
     font-weight: 500;
 }
 
@@ -231,7 +234,7 @@ section#education {
 
 .education-item h3 {
     font-size: 1.7rem;
-    color: #333;
+    color: #3A3A3A;
     margin-bottom: 10px;
 }
 
@@ -251,20 +254,20 @@ section#education {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 70vh; /* Take at least 70% of the screen height */
+    min-height: 70vh;
     padding: 40px;
-    background-color: #F4F4F9; /* Light grey background for contact section */
+    background-color: #F8F0F6; /* Soft blush pink background for contact section */
 }
 
 #contact-us h2 {
     font-size: 2.5rem;
-    color: #2C3E50; /* Deep blue color for the heading */
+    color: #FF69B4; /* Soft pink color for the heading */
     margin-bottom: 20px;
 }
 
 #contact-us p {
     font-size: 1.2rem;
-    color: #333;
+    color: #3A3A3A;
     margin-bottom: 30px;
 }
 
@@ -272,19 +275,19 @@ section#education {
 .contact-icons {
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centers the icons horizontally */
-    align-items: center; /* Centers the icons vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-icons a {
     text-decoration: none;
     font-size: 2.5rem;
-    color: #2C3E50; /* Dark blue color for icons */
+    color: #FF69B4;
     transition: color 0.3s ease;
 }
 
 .contact-icons a:hover {
-    color: #F39C12; /* Gold color for hover effect */
+    color: #FFD700; /* Gold color for hover effect */
 }
 
 /* Icon Container (for spacing) */
