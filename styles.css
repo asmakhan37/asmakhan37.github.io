@@ -175,3 +175,100 @@ section#education {
 .education-item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow effect on hover */
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section Styling */
+#Projects {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+/* Project Container with Grid Layout */
+#Projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Each Project Item */
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Hover effect for projects */
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
