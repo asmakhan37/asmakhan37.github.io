@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
     margin: 0;
@@ -12,6 +13,9 @@ body {
     color: #333; /* Dark text for contrast */
     padding: 20px;
     line-height: 1.6;
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styling */
@@ -36,6 +40,16 @@ header p {
     font-size: 1.3rem;
     color: #BDC3C7; /* Light grey to complement the blue */
     font-weight: 400;
+}
+
+/* About Me Section - Centering Content */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh; /* Take at least 70% of the screen height */
+    padding: 40px;
 }
 
 /* Navigation Styling */
@@ -78,7 +92,7 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 15px;
-    margin-top: 50px;
+    margin-top: auto; /* Push footer to the bottom */
     background-color: #2C3E50; /* Deep blue footer */
     color: white;
     border-radius: 10px;
