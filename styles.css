@@ -74,15 +74,15 @@ section {
     text-align: center;
 }
 
-/* Projects, Research, and Education Grid Layout */
-#Projects, #publications, #education {
+/* Projects, Research, Education, About, and Skills Grid Layout */
+#Projects, #publications, #education, #about, #skills, #hobbies, #languages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 3rem;
 }
 
-#Projects .Projects, #publications .Projects, #education .education-item {
+#Projects .Projects, #publications .Projects, #education .education-item, #about .about-item, #skills .skill-item, #hobbies .hobby-item, #languages .language-item {
     background-color: #ffffff;
     border: 1px solid #c1a0d4; /* Rosely color border */
     border-radius: 8px;
@@ -91,7 +91,7 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#Projects .Projects:hover, #publications .Projects:hover, #education .education-item:hover {
+#Projects .Projects:hover, #publications .Projects:hover, #education .education-item:hover, #about .about-item:hover, #skills .skill-item:hover, #hobbies .hobby-item:hover, #languages .language-item:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -190,7 +190,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #Projects, #publications, #education {
+    #Projects, #publications, #education, #about, #skills, #hobbies, #languages {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
