@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: inherit;
@@ -25,43 +26,55 @@ a:hover {
 /* Header Styles */
 header {
     text-align: center;
-    background-color: #2d6a4f; /* Cayman Theme Green */
+    background: linear-gradient(135deg, #2d6a4f, #40916c); /* Cayman Theme Green Gradient */
     color: white;
-    padding: 2rem;
+    padding: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 header h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-out;
 }
 
 header p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    animation: fadeIn 2s ease-out;
 }
 
 header img {
     border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 150px;
 }
 
 /* Navigation Bar */
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #2d6a4f; /* Cayman Theme Green */
+    background-color: #2d6a4f;
     padding: 1rem;
     list-style: none;
+    border-radius: 10px;
+    margin-top: 2rem;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -72,6 +85,27 @@ nav ul li a:hover {
 section {
     padding: 3rem 1rem;
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Gradient Animated Boxes for Sections */
+section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffffff, #f4f7f6);
+    padding: 3rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+section:hover {
+    background: linear-gradient(135deg, #c1a0d4, #2d6a4f);
+    transform: translateY(-10px);
+}
+
+section:hover .about-container {
+    transform: translateY(-10px);
 }
 
 /* About Me Section */
@@ -88,6 +122,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 3rem;
+    transition: transform 0.3s ease;
 }
 
 .about-column {
@@ -97,10 +132,10 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* About Section - Hover Animation */
+/* Hover Animation on About Section */
 .about-column:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Larger Text and Bold Style */
@@ -124,7 +159,7 @@ p {
 
 /* Footer */
 footer {
-    background-color: #2d6a4f; /* Cayman Theme Green */
+    background-color: #2d6a4f;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -149,6 +184,7 @@ footer {
 #contact a {
     color: #2d6a4f;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 #contact a:hover {
@@ -210,3 +246,16 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
