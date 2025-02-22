@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,44 +7,43 @@
 
 /* Body and General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9; /* Light background for readability */
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 /* Links */
 a {
     text-decoration: none;
-    color: inherit;
+    color: #2e3a44; /* Muted color for links */
 }
 
 a:hover {
-    color: #c1a0d4; /* Rosely color on hover */
+    color: #7f7f7f; /* Slightly lighter on hover */
 }
 
 /* Header Styles */
 header {
     text-align: center;
-    background: linear-gradient(135deg, #2d6a4f, #40916c); /* Cayman Theme Green Gradient */
-    color: white;
-    padding: 3rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 4rem 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
 }
 
 header h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    animation: fadeIn 1.5s ease-out;
+    color: #2e3a44;
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
-    animation: fadeIn 2s ease-out;
+    color: #555;
 }
 
 header img {
@@ -59,120 +58,87 @@ header img {
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #2d6a4f;
-    padding: 1rem;
+    background-color: #2e3a44; /* Darker shade */
+    padding: 1rem 0;
     list-style: none;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-top: 2rem;
 }
 
 nav ul li {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
-    font-size: 1.2rem;
+    color: #ffffff;
+    font-size: 1.1rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #c1a0d4; /* Rosely color */
+    color: #7f7f7f; /* Hover effect with lighter shade */
 }
 
 /* Section and Content Layout */
 section {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-/* Gradient Animated Boxes for Sections */
-section {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #ffffff, #f4f7f6);
-    padding: 3rem 1rem;
-    border-radius: 15px;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
 }
 
-section:hover {
-    background: linear-gradient(135deg, #c1a0d4, #2d6a4f);
-    transform: translateY(-10px);
-}
-
-section:hover .about-container {
-    transform: translateY(-10px);
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2e3a44;
 }
 
 /* About Me Section */
 #about {
     background-color: #ffffff;
+    padding: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     border-radius: 8px;
 }
 
-/* About Container - 2 Columns */
+/* About Container - Grid Layout */
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-top: 3rem;
-    transition: transform 0.3s ease;
 }
 
 .about-column {
-    padding: 1rem;
-    background-color: #f4f7f6;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
 }
 
-/* Hover Animation on About Section */
+/* Hover Effects on About Section */
 .about-column:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Larger Text and Bold Style */
-h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #2d6a4f; /* Cayman Theme Green */
-}
-
-h3, h4, h5, h6 {
-    font-size: 1.8rem;
-}
-
-/* Paragraph Styles */
-p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
 footer {
-    background-color: #2d6a4f;
-    color: white;
+    background-color: #2e3a44;
+    color: #ffffff;
     text-align: center;
-    padding: 1rem;
-    font-size: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    border-top: 1px solid #ddd;
 }
 
-/* Contact Section Styles */
+/* Contact Section */
 #contact h1 {
     font-size: 2.5rem;
-    color: #2d6a4f;
+    color: #2e3a44;
     margin-bottom: 2rem;
 }
 
@@ -182,13 +148,13 @@ footer {
 }
 
 #contact a {
-    color: #2d6a4f;
+    color: #2e3a44;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #c1a0d4; /* Rosely color */
+    color: #7f7f7f;
 }
 
 /* Social Media Icons */
@@ -205,19 +171,18 @@ footer {
 }
 
 #contact ul li a {
-    color: #2d6a4f;
+    color: #2e3a44;
     transition: color 0.3s ease;
 }
 
 #contact ul li a:hover {
-    color: #c1a0d4; /* Rosely color */
+    color: #7f7f7f;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    #Projects, #publications, #education {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    section {
+        padding: 2rem 1rem;
     }
 
     header h1 {
@@ -225,7 +190,7 @@ footer {
     }
 
     header p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     nav ul {
@@ -237,25 +202,7 @@ footer {
         margin: 0.5rem 0;
     }
 
-    #contact ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .about-container {
         grid-template-columns: 1fr;
     }
 }
-
-/* Animation for fadeIn */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
