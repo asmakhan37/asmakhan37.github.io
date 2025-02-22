@@ -142,3 +142,131 @@ button:hover {
         font-size: 1.2rem; /* Adjusts font size for mobile devices */
     }
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* White background for all pages */
+    color: black; /* Text color set to black */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white; /* White background for header */
+    color: black; /* Black text for header */
+    border-radius: 10px;
+    border: 2px solid black; /* Border to separate header */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: black; /* Dark text for header title */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: black; /* Dark text for paragraph */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: white; /* White background for navigation bar */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 2px solid black; /* Border to match the white background */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Black text for links */
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f09a36; /* Hover background color */
+    color: white; /* Text color on hover changes to white */
+}
+
+/* Education Section Styling */
+section#education {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 30px; /* Space between the two columns */
+    margin-bottom: 30px;
+}
+
+/* Educational Items Styling */
+.education-item {
+    background-color: #f9f9f9; /* Light background for each item */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.education-item h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.education-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow effect on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: white; /* White background for footer */
+    color: black; /* Black text for footer */
+    border-radius: 10px;
+    border: 2px solid black; /* Border to match the white background */
+}
+
+footer p {
+    font-size: 1rem;
+    color: black; /* Dark text for footer */
+}
+
+/* Responsive Design - Adjusting Grid for Smaller Screens */
+@media (max-width: 768px) {
+    section#education {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+}
