@@ -85,6 +85,8 @@ nav ul li a:hover {
     text-align: center;
     min-height: 70vh; /* Take at least 70% of the screen height */
     padding: 40px;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 /* Footer Styling */
