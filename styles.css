@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #E0F7FA; /* Light cyan background to evoke freshness */
-    color: #00796B; /* Deep green color for text */
+    background-color: #F7F9FB; /* Light background for a clean feel */
+    color: #333; /* Darker text color for easy readability */
     padding: 20px;
     line-height: 1.6;
 }
@@ -18,32 +18,33 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
-    padding: 20px;
-    background-color: #00796B; /* Deep green background */
-    color: white; /* White text for header */
+    padding: 30px;
+    background-color: #4A90E2; /* Bright blue for header */
+    color: white;
     border-radius: 10px;
-    border: 2px solid #004D40; /* Darker green border for contrast */
+    border: 2px solid #357ABD; /* Slightly darker blue border for contrast */
 }
 
 header h1 {
     font-size: 3rem;
-    color: #ffffff; /* White text for the header */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
 }
 
 header p {
     font-size: 1.2rem;
-    color: #B2DFDB; /* Light teal for the paragraph text */
+    color: #E1F5FE; /* Light cyan for the paragraph text */
     font-weight: 400;
 }
 
 /* Navigation Styling */
 nav {
-    background-color: #ffffff; /* White background for navigation bar */
+    background-color: #ffffff; /* Clean white navigation */
     text-align: center;
     margin: 20px 0;
-    padding: 10px 0;
+    padding: 12px 0;
     border-radius: 5px;
-    border: 1px solid #00796B; /* Border matching the header */
+    border: 1px solid #4A90E2; /* Matching border color */
 }
 
 nav ul {
@@ -59,17 +60,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #00796B; /* Deep green color for links */
+    color: #4A90E2; /* Blue for links */
     font-weight: bold;
     font-size: 1.3rem;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #004D40; /* Dark green background on hover */
-    color: white; /* White text color on hover */
+    background-color: #357ABD; /* Darker blue for hover effect */
+    color: white;
 }
 
 /* Footer Styling */
@@ -77,137 +78,70 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-    background-color: #00796B; /* Green background for footer */
-    color: white; /* White text for footer */
+    background-color: #4A90E2;
+    color: white;
     border-radius: 10px;
-    border: 2px solid #004D40; /* Dark green border */
+    border: 2px solid #357ABD;
 }
 
 footer p {
     font-size: 1rem;
-    color: white; /* White footer text */
+    color: white;
 }
 
 /* Icons Styling */
 ul li a i {
-    margin-right: 10px;  /* Adds space between the icon and text */
-    font-size: 1.5rem;   /* Controls icon size */
-    color: #00796B;         /* Icon color to match the color scheme */
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #4A90E2;
 }
 
 /* Icon Hover Effect */
 ul li a:hover i {
-    color: #004D40;  /* Changes icon color on hover to match the button hover color */
+    color: #357ABD;
 }
 
-/* Additional Styles for Form or Input Elements */
+/* Input and Textarea Styling */
 input, textarea {
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
-    border: 1px solid #00796B; /* Border matching theme */
+    border: 1px solid #4A90E2;
     width: 100%;
     font-size: 1rem;
     margin-top: 10px;
-    background-color: #B2DFDB; /* Light cyan background for inputs */
+    background-color: #E1F5FE; /* Soft cyan background */
 }
 
 /* Button Styling */
 button {
-    background-color: #00796B; /* Green button */
+    background-color: #4A90E2;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #004D40; /* Darker green on hover for buttons */
+    background-color: #357ABD;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stacks the navigation links on smaller screens */
+        flex-direction: column;
         gap: 10px;
     }
 
     header h1 {
-        font-size: 2.5rem; /* Reduces header size on smaller screens */
+        font-size: 2.5rem;
     }
 
     nav ul li a {
-        font-size: 1.2rem; /* Adjusts font size for mobile devices */
+        font-size: 1.2rem;
     }
-}
-
-/* Education Section Styling */
-section#education {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns layout */
-    gap: 30px; /* Space between the two columns */
-    margin-bottom: 30px;
-}
-
-/* Educational Items Styling */
-.education-item {
-    background-color: #ffffff; /* White background for each item */
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #00796B; /* Green border matching theme */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    transition: box-shadow 0.3s ease;
-}
-
-.education-item h3 {
-    font-size: 1.6rem;
-    color: #00796B; /* Green text for educational headings */
-    margin-bottom: 10px;
-}
-
-.education-item p {
-    font-size: 1rem;
-    color: #00796B; /* Green text for paragraphs */
-}
-
-.education-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow effect on hover */
-}
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-h2 {
-    text-align: center;
-    margin: 20px;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #333;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Projects Section Styling */
@@ -215,25 +149,20 @@ nav ul li a:hover {
     padding: 40px;
     background-color: #ffffff;
     margin: 20px;
-}
-
-/* Project Container with Grid Layout */
-#Projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
-    padding: 20px;
     justify-items: center;
 }
 
 /* Each Project Item */
 .project-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0;
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-item h3 {
@@ -250,7 +179,7 @@ nav ul li a:hover {
 
 .project-item a {
     text-decoration: none;
-    color: #007bff;
+    color: #4A90E2;
     font-weight: bold;
 }
 
@@ -258,17 +187,41 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
-}
-
 /* Hover effect for projects */
 .project-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Education Section Styling */
+section#education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Educational Items Styling */
+.education-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #4A90E2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.education-item h3 {
+    font-size: 1.6rem;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #4A90E2;
+}
+
+.education-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
