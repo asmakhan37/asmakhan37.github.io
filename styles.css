@@ -178,14 +178,30 @@ button:hover {
 /* Each Project Item */
 .project-item {
     background-color: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #E0E0E0; /* Light border between items */
     padding: 30px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Ensures content stays within the boundary */
 }
 
+.project-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #00B8D4; /* Teal border partitioning each project */
+    border-radius: 12px;
+    pointer-events: none; /* Prevents it from interfering with clicks */
+    transition: all 0.3s ease;
+}
+
+/* Add some spacing inside the project items for clear content partition */
 .project-item h3 {
     font-size: 1.6rem;
     color: #3A3A3A;
@@ -212,6 +228,11 @@ button:hover {
 .project-item:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect to make the partition border change color */
+.project-item:hover::before {
+    border-color: #FFEB3B; /* Sunny yellow color when hovering over project */
 }
 
 
