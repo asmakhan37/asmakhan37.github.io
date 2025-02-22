@@ -1,331 +1,219 @@
-/* General Reset */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body and General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5f5f5; /* Light grey background for Cayman theme */
-    color: #333; /* Dark grey text */
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
     line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Animation for fade-in effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Header Styling */
+a:hover {
+    color: #c1a0d4; /* Rosely color on hover */
+}
+
+/* Header Styles */
 header {
     text-align: center;
-    margin-bottom: 50px;
-    padding: 60px 20px;
-    background: #006fa6; /* Cayman blue background */
+    background-color: #2d6a4f; /* Cayman Theme Green */
     color: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 }
 
 header h1 {
-    font-size: 5rem;
-    color: white;
-    font-weight: 800;
-    letter-spacing: -2px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 header p {
-    font-size: 2rem;
-    color: #ffffff; /* Light text for contrast */
-    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Navigation Styling */
-nav {
-    background-color: #ffffff; /* White background for nav */
-    text-align: center;
-    margin: 30px 0;
-    padding: 18px 0;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+header img {
+    border-radius: 50%;
 }
 
+/* Navigation Bar */
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    background-color: #2d6a4f; /* Cayman Theme Green */
+    padding: 1rem;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #006fa6; /* Cayman blue for links */
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 12px 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #00bcd4; /* Teal hover effect */
-    color: white;
+    color: #c1a0d4; /* Rosely color */
 }
 
-/* About Me Section - Centering Content */
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Section and Content Layout */
+section {
+    padding: 3rem 1rem;
     text-align: center;
-    min-height: 70vh;
-    padding: 40px;
+}
+
+/* Projects, Research, and Education Grid Layout */
+#Projects, #publications, #education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+#Projects .Projects, #publications .Projects, #education .education-item {
+    background-color: #ffffff;
+    border: 1px solid #c1a0d4; /* Rosely color border */
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Projects .Projects:hover, #publications .Projects:hover, #education .education-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Larger Text and Bold Style */
+h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-size: 2rem;
-    background: #e3f2fd; /* Light blue background */
-    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    color: #2d6a4f; /* Cayman Theme Green */
 }
 
-/* Footer Styling */
+h3, h4, h5, h6 {
+    font-size: 1.8rem;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Links within Projects */
+#Projects a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2d6a4f;
+    border: 2px solid #2d6a4f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#Projects a:hover {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+/* Footer */
 footer {
+    background-color: #2d6a4f; /* Cayman Theme Green */
+    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
-    background-color: #006fa6; /* Cayman blue footer */
-    color: white;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-footer p {
-    font-size: 1.2rem;
-    color: white;
-}
-
-/* Icon Styling */
-ul li a i {
-    margin-right: 10px;
-    font-size: 2rem;
-    color: #006fa6; /* Cayman blue */
-}
-
-ul li a:hover i {
-    color: #00bcd4; /* Teal on hover */
-}
-
-/* Input and Textarea Styling */
-input, textarea {
-    padding: 14px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    padding: 1rem;
+    font-size: 1rem;
+    position: fixed;
     width: 100%;
-    font-size: 1.2rem;
-    margin-top: 10px;
-    background-color: #ffffff;
-    color: #333;
-    transition: border-color 0.3s;
-}
-
-/* Button Styling */
-button {
-    background-color: #006fa6; /* Cayman blue */
-    color: white;
-    padding: 14px 28px;
-    border-radius: 8px;
-    border: none;
-    font-size: 1.4rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #00bcd4; /* Teal on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    header h1 {
-        font-size: 4rem;
-    }
-
-    nav ul li a {
-        font-size: 1.3rem;
-    }
-}
-
-/* Projects Section Styling */
-#Projects {
-    padding: 40px;
-    background-color: #ffffff;
-    margin: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Each Project Item */
-.project-item {
-    background-color: #f1f1f1; /* Light grey background for projects */
-    border: 1px solid #e0e0e0;
-    padding: 30px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-}
-
-.project-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
-    border: 2px solid #006fa6;
-    border-radius: 12px;
-    pointer-events: none;
-    transition: all 0.3s ease;
 }
 
-/* Add some spacing inside the project items */
-.project-item h3 {
-    font-size: 2.8rem;
-    color: #333;
-    margin-bottom: 15px;
+/* Contact Section Styles */
+#contact h1 {
+    font-size: 2.5rem;
+    color: #2d6a4f;
+    margin-bottom: 2rem;
 }
 
-.project-item p {
-    font-size: 1.5rem;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.project-item a {
-    text-decoration: none;
-    color: #006fa6;
-    font-weight: 600;
-}
-
-.project-item a:hover {
-    text-decoration: underline;
-}
-
-/* Hover effect for projects */
-.project-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.project-item:hover::before {
-    border-color: #00bcd4; /* Teal hover effect */
-}
-
-/* Education Section Styling */
-section#education {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-/* Educational Items Styling */
-.education-item {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.education-item h3 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.education-item p {
+#contact p {
     font-size: 1.2rem;
-    color: #666;
+    margin-bottom: 1.5rem;
 }
 
-.education-item:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+#contact a {
+    color: #2d6a4f;
+    font-weight: bold;
 }
 
-/* Contact Us Section */
-#contact-us {
+#contact a:hover {
+    color: #c1a0d4; /* Rosely color */
+}
+
+/* Social Media Icons */
+#contact ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 70vh;
-    padding: 40px;
-    background-color: #00bcd4; /* Teal background for contact section */
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
-#contact-us h2 {
-    font-size: 4rem;
-    color: #ffffff;
-    margin-bottom: 20px;
+#contact ul li {
+    font-size: 1.8rem;
 }
 
-#contact-us p {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-/* Social Media Icons Styling */
-.contact-icons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-icons a {
-    text-decoration: none;
-    font-size: 3.5rem;
-    color: #006fa6;
+#contact ul li a {
+    color: #2d6a4f;
     transition: color 0.3s ease;
 }
 
-.contact-icons a:hover {
-    color: #00bcd4;
+#contact ul li a:hover {
+    color: #c1a0d4; /* Rosely color */
 }
 
-.contact-icons i {
-    transition: transform 0.3s ease;
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #Projects, #publications, #education {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-.contact-icons a:hover i {
-    transform: scale(1.3);
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #contact ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
