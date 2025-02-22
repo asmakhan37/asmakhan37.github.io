@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FAFAFA; /* Light grayish background */
+    background-color: #FFF1F8; /* Soft pink background */
     color: #333; /* Dark text for contrast */
     padding: 20px;
     line-height: 1.6;
@@ -19,7 +19,7 @@ header {
     text-align: center;
     margin-bottom: 50px;
     padding: 50px 20px;
-    background-color: #4CAF50; /* Fresh green background for vibrancy */
+    background-color: #D81B60; /* Bold magenta background for header */
     color: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -34,7 +34,7 @@ header h1 {
 
 header p {
     font-size: 1.3rem;
-    color: #B2DFDB; /* Light teal to complement the green */
+    color: #B2EBF2; /* Light turquoise to complement the magenta */
     font-weight: 400;
 }
 
@@ -61,7 +61,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #D81B60; /* Magenta color for links */
     font-weight: 500;
     font-size: 1.2rem;
     padding: 12px 20px;
@@ -79,7 +79,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 50px;
-    background-color: #4CAF50;
+    background-color: #D81B60;
     color: white;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -94,7 +94,7 @@ footer p {
 ul li a i {
     margin-right: 10px;
     font-size: 1.5rem;
-    color: #333;
+    color: #D81B60; /* Magenta color for icons */
 }
 
 /* Icon Hover Effect */
@@ -116,7 +116,7 @@ input, textarea {
 
 /* Button Styling */
 button {
-    background-color: #4CAF50; /* Vibrant green button */
+    background-color: #D81B60; /* Bold magenta button */
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -127,7 +127,7 @@ button {
 }
 
 button:hover {
-    background-color: #388E3C; /* Darker green on hover */
+    background-color: #E91E63; /* Slightly darker magenta on hover */
 }
 
 /* Responsive Design */
@@ -182,7 +182,7 @@ button:hover {
 
 .project-item a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #D81B60; /* Magenta for links in project items */
     font-weight: 500;
 }
 
