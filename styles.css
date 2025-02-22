@@ -1,3 +1,4 @@
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -73,55 +74,63 @@ section {
     text-align: center;
 }
 
-/* About Me Section */
-#about {
-    border: 5px solid magenta;  /* Magenta Border */
-    background-color: #f8bbd0;  /* Baby Pink Background */
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-}
-
-/* About Container - 2 Columns */
-.about-container {
+/* Projects, Research, and Education Grid Layout */
+#Projects, #publications, #education {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 3rem;
 }
 
-.about-column {
-    padding: 1rem;
-    background-color: #f4f7f6;
+#Projects .Projects, #publications .Projects, #education .education-item {
+    background-color: #ffffff;
+    border: 1px solid #c1a0d4; /* Rosely color border */
     border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* About Section - Hover Animation */
-.about-column:hover {
+#Projects .Projects:hover, #publications .Projects:hover, #education .education-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Larger Text and Bold Style */
 h2, h3, h4, h5, h6 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #d5006d;  /* Dark Pink Color */
+    color: #2d6a4f; /* Cayman Theme Green */
 }
 
 h3, h4, h5, h6 {
-    font-size: 3.8rem;
+    font-size: 1.8rem;
 }
 
 /* Paragraph Styles */
 p {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #d5006d;  /* Dark Pink Font Color */
+}
+
+/* Links within Projects */
+#Projects a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2d6a4f;
+    border: 2px solid #2d6a4f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#Projects a:hover {
+    background-color: #2d6a4f;
+    color: white;
 }
 
 /* Footer */
@@ -135,7 +144,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
 
 /* Contact Section Styles */
 #contact h1 {
@@ -207,9 +215,5 @@ footer {
     #contact ul {
         flex-direction: column;
         align-items: center;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
     }
 }
