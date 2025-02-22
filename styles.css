@@ -1,4 +1,3 @@
-
 /* General Reset */
 * {
     margin: 0;
@@ -42,16 +41,6 @@ header p {
     font-weight: 400;
 }
 
-/* About Me Section - Centering Content */
-#about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 70vh; /* Take at least 70% of the screen height */
-    padding: 40px;
-}
-
 /* Navigation Styling */
 nav {
     background-color: #FFFFFF;
@@ -88,6 +77,16 @@ nav ul li a:hover {
     color: white; /* White text when hovering */
 }
 
+/* About Me Section - Centering Content */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh; /* Take at least 70% of the screen height */
+    padding: 40px;
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
@@ -104,7 +103,7 @@ footer p {
     color: white;
 }
 
-/* Icons Styling */
+/* Icon Styling */
 ul li a i {
     margin-right: 10px;
     font-size: 1.5rem;
@@ -241,4 +240,56 @@ section#education {
 
 .education-item:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Us Section */
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh; /* Take at least 70% of the screen height */
+    padding: 40px;
+    background-color: #F4F4F9; /* Light grey background for contact section */
+}
+
+#contact-us h2 {
+    font-size: 2.5rem;
+    color: #2C3E50; /* Deep blue color for the heading */
+    margin-bottom: 20px;
+}
+
+#contact-us p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Social Media Icons Styling */
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center; /* Centers the icons vertically */
+}
+
+.contact-icons a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #2C3E50; /* Dark blue color for icons */
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #F39C12; /* Gold color for hover effect */
+}
+
+/* Icon Container (for spacing) */
+.contact-icons i {
+    transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover i {
+    transform: scale(1.2); /* Slight zoom effect when hovering over icons */
 }
