@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F8F0F6; /* Soft blush pink background */
+    background-color: #E0F7FA; /* Soft light blue background (seafoam) */
     color: #3A3A3A; /* Darker text for readability */
     padding: 20px;
     line-height: 1.6;
@@ -22,7 +22,7 @@ header {
     text-align: center;
     margin-bottom: 50px;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #FFB6C1, #FF69B4); /* Soft pink to deep rose gradient */
+    background: linear-gradient(135deg, #00B8D4, #0097A7); /* Light blue to teal gradient */
     color: white;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -37,7 +37,7 @@ header h1 {
 
 header p {
     font-size: 1.3rem;
-    color: #F0E5E8; /* Light blush pink to complement the background */
+    color: #B2EBF2; /* Light teal to complement the blue */
     font-weight: 400;
 }
 
@@ -65,7 +65,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #FF69B4; /* Soft rose pink color for links */
+    color: #00B8D4; /* Teal color for links */
     font-weight: 500;
     font-size: 1.2rem;
     padding: 12px 20px;
@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #FFD700; /* Gold-like color on hover */
+    background-color: #FFEB3B; /* Sunny yellow on hover */
     color: white;
 }
 
@@ -88,7 +88,7 @@ nav ul li a:hover {
     padding: 40px;
     font-weight: bold;
     font-size: 22px;
-    background: #FFF0F5; /* Light lavender background */
+    background: #F1F8E9; /* Soft lime green background */
     border-radius: 15px;
 }
 
@@ -97,7 +97,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: auto;
-    background-color: #FF69B4; /* Soft rose pink footer */
+    background-color: #00B8D4; /* Teal footer */
     color: white;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -112,12 +112,12 @@ footer p {
 ul li a i {
     margin-right: 10px;
     font-size: 1.5rem;
-    color: #FF69B4; /* Soft pink for icons */
+    color: #00B8D4; /* Teal for icons */
 }
 
 /* Icon Hover Effect */
 ul li a:hover i {
-    color: #FFD700; /* Gold color for icon hover effect */
+    color: #FFEB3B; /* Yellow color for icon hover effect */
 }
 
 /* Input and Textarea Styling */
@@ -134,7 +134,7 @@ input, textarea {
 
 /* Button Styling */
 button {
-    background-color: #FF69B4; /* Soft rose pink button */
+    background-color: #00B8D4; /* Teal button */
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -145,7 +145,7 @@ button {
 }
 
 button:hover {
-    background-color: #FF1493; /* Slightly darker pink on hover */
+    background-color: #00838F; /* Darker teal on hover */
 }
 
 /* Responsive Design */
@@ -200,7 +200,7 @@ button:hover {
 
 .project-item a {
     text-decoration: none;
-    color: #FF69B4;
+    color: #00B8D4; /* Teal for links */
     font-weight: 500;
 }
 
@@ -256,12 +256,12 @@ section#education {
     text-align: center;
     min-height: 70vh;
     padding: 40px;
-    background-color: #F8F0F6; /* Soft blush pink background for contact section */
+    background-color: #E0F7FA; /* Soft light blue background for contact section */
 }
 
 #contact-us h2 {
     font-size: 2.5rem;
-    color: #FF69B4; /* Soft pink color for the heading */
+    color: #00B8D4; /* Teal color for the heading */
     margin-bottom: 20px;
 }
 
@@ -282,12 +282,12 @@ section#education {
 .contact-icons a {
     text-decoration: none;
     font-size: 2.5rem;
-    color: #FF69B4;
+    color: #00B8D4;
     transition: color 0.3s ease;
 }
 
 .contact-icons a:hover {
-    color: #FFD700; /* Gold color for hover effect */
+    color: #FFEB3B; /* Yellow for hover effect */
 }
 
 /* Icon Container (for spacing) */
